@@ -9,14 +9,14 @@
 ## its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
-    Inv <- NULL
+    inv <- NULL
     set <- function(y) {
         x <<- y
-        Inv <<- NULL
+        inv <<- NULL
     }
     get <- function() x
-    setinv <- function(inverse) inv <<- inverse
-    getinv <- function() inv
+    setinverse <- function(inverse) inv <<- inverse
+    getinverse <- function() inv
     list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
 }
 
